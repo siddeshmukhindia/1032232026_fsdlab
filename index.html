@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">DocuPortal</div>
+        <ul class="nav-links">
+            <li><a href="#">Upload</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+    </nav>
+
+    <!-- Welcome Message -->
+    <div class="welcome">
+        <h1>Welcome back 👋</h1>
+        <p>Securely upload and manage your documents</p>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="main-layout">
+
+        <!-- Left Info Section -->
+        <div class="info-section">
+            <h2>Professional Document Handling</h2>
+            <p>
+                Upload, organize, and access your important documents in one secure place.
+                Designed for efficiency and simplicity.
+            </p>
+        </div>
+
+        <!-- Upload Card -->
+        <div class="upload-card">
+            <h3>Upload Documents</h3>
+
+            <input type="file" id="fileInput" multiple hidden>
+            <label for="fileInput" class="upload-btn">Choose Files</label>
+
+            <p id="fileName">No file selected</p>
+
+            <button onclick="uploadFiles()">Upload</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
