@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sid | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Siddhant Deshmukh</div>
+        <ul class="nav-links">
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- Welcome -->
+    <div class="welcome">
+        <h1>Hello, I'm Siddhant 👋</h1>
+        <p>Frontend Developer | UI Designer | Web Enthusiast</p>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="main-layout" id="portfolio">
+
+        <!-- Left Section -->
+        <div class="info-section">
+            <h2>About Me</h2>
+            <p>
+                I am a Computer Engineering student passionate about building
+                responsive and user-friendly web applications.
+            </p>
+
+            <h3>Education</h3>
+            <p>B.E. Computer Engineering (TY)</p>
+
+            <h3>Skills</h3>
+            <ul class="skills">
+                <li>Frontend Developer</li>
+                <li>JavaScript</li>
+                <li>UI / UX Design</li>
+            </ul>
+
+            <div class="btn-group">
+                <button onclick="trackEvent('Projects')">View Projects</button>
+                <button onclick="trackEvent('Certificates')">View Certificates</button>
+            </div>
+        </div>
+
+        <!-- Registration Card -->
+        <div class="upload-card" id="register">
+            <h3>User Registration</h3>
+
+            <form id="registerForm">
+                <input type="text" id="name" placeholder="Full Name">
+                <small class="error" id="nameError"></small>
+
+                <input type="text" id="mobile" placeholder="Mobile Number">
+                <small class="error" id="mobileError"></small>
+
+                <input type="email" id="email" placeholder="Email">
+                <small class="error" id="emailError"></small>
+
+                <input type="password" id="password" placeholder="Password">
+                <small class="error" id="passwordError"></small>
+
+                <input type="password" id="confirmPassword" placeholder="Confirm Password">
+                <small class="error" id="confirmPasswordError"></small>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
