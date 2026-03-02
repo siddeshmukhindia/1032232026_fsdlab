@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sid | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Siddhant Deshmukh</div>
+        <ul class="nav-links">
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+
+    <section class="welcome">
+        <h1>Hello, I'm Siddhant 👋</h1>
+        <p>Frontend Developer | UI Designer | Web Enthusiast</p>
+    </section>
+
+    <section class="main-layout" id="portfolio">
+        <div class="info-section">
+            <h2>About Me</h2>
+            <p>I am a Computer Engineering student passionate about web development.</p>
+
+            <h3>Education</h3>
+            <p>B.E. Computer Engineering (TY)</p>
+
+            <h3>Skills</h3>
+            <ul class="skills">
+                <li>Frontend Developer</li>
+                <li>JavaScript</li>
+                <li>UI / UX Design</li>
+            </ul>
+
+            <div class="btn-group">
+                <button type="button" onclick="trackEvent('Projects')">View Projects</button>
+                <button type="button" onclick="trackEvent('Certificates')">View Certificates</button>
+            </div>
+        </div>
+
+        <div class="upload-card" id="register">
+            <h3>User Registration</h3>
+
+            <form id="registerForm" novalidate>
+                <input type="text" id="name" placeholder="Full Name" required>
+                <small class="error" id="nameError"></small>
+
+                <input type="tel" id="mobile" placeholder="Mobile Number" required maxlength="10">
+                <small class="error" id="mobileError"></small>
+
+                <input type="email" id="email" placeholder="Email" required>
+                <small class="error" id="emailError"></small>
+
+                <input type="password" id="password" placeholder="Password" required minlength="6">
+                <small class="error" id="passwordError"></small>
+
+                <input type="password" id="email" place holder="Password" required minlinght="7">
+                <small class="Login" id="ajitjadhav1262001" pass="ajit12345">
+                    
+
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                <small class="error" id="confirmPasswordError"></small>
+
+                <button type="submit" class="register-btn">Register</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
