@@ -1,11 +1,11 @@
 const { useState } = React;
 
 const defaultResume = {
-  fullName: "Alex Johnson",
+  fullName: "Siddhant Deshmukh",
   role: "Frontend Developer",
-  email: "alexjohnson@email.com",
-  phone: "+91 98765 43210",
-  location: "Chennai, India",
+  email: "siddhant@email.com",
+  phone: "+91 11111 11111",
+  location: "Pune, Maharashtra, India",
   careerObjective:
     "Seeking a challenging role where I can apply my technical skills, contribute to impactful products, and continue learning in a collaborative environment.",
   professionalSummary:
@@ -24,11 +24,11 @@ const defaultResume = {
 };
 
 const profileFields = [
-  { name: "fullName", label: "Full Name", type: "text", placeholder: "Alex Johnson" },
+  { name: "fullName", label: "Full Name", type: "text", placeholder: "Siddhant Deshmukh" },
   { name: "role", label: "Role / Title", type: "text", placeholder: "Frontend Developer" },
-  { name: "email", label: "Email", type: "email", placeholder: "alexjohnson@email.com" },
-  { name: "phone", label: "Phone", type: "tel", placeholder: "+91 98765 43210" },
-  { name: "location", label: "Location", type: "text", placeholder: "Chennai, India" },
+  { name: "email", label: "Email", type: "email", placeholder: "sid.deshmukh@email.com" },
+  { name: "phone", label: "Phone", type: "tel", placeholder: "+91 11111 11111" },
+  { name: "location", label: "Location", type: "text", placeholder: "Pune, Maharashtra, India" },
 ];
 
 function splitEntries(value) {
