@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskFlow | Task Management Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Assignment 6 Project</p>
+          <h1>TaskFlow Dashboard</h1>
+          <p class="hero-text">
+            Manage daily tasks, track progress, and stay organized with a
+            full-stack task manager powered by Express and Node.js.
+          </p>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span id="totalTasks">0</span>
+            <p>Total Tasks</p>
+          </div>
+          <div class="stat-card">
+            <span id="completedTasks">0</span>
+            <p>Completed</p>
+          </div>
+          <div class="stat-card">
+            <span id="pendingTasks">0</span>
+            <p>Pending</p>
+          </div>
+        </div>
+      </header>
+
+      <main class="content-grid">
+        <section class="panel">
+          <div class="section-head">
+            <h2>Add New Task</h2>
+            <p>Create and manage your work in one place.</p>
+          </div>
+
+          <form id="taskForm" class="task-form">
+            <input type="hidden" id="taskId" />
+
+            <label>
+              Title
+              <input type="text" id="title" placeholder="Enter task title" required />
+            </label>
+
+            <label>
+              Description
+              <textarea
+                id="description"
+                rows="4"
+                placeholder="Enter task description"
+              ></textarea>
+            </label>
+
+            <div class="form-row">
+              <label>
+                Priority
+                <select id="priority">
+                  <option>Low</option>
+                  <option selected>Medium</option>
+                  <option>High</option>
+                </select>
+              </label>
+
+              <label>
+                Status
+                <select id="status">
+                  <option selected>Pending</option>
+                  <option>In Progress</option>
+                  <option>Completed</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              Due Date
+              <input type="date" id="dueDate" />
+            </label>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary" id="submitButton">
+                Add Task
+              </button>
+              <button type="button" class="btn btn-secondary" id="cancelEditButton">
+                Cancel
+              </button>
+            </div>
+          </form>
+        </section>
+
+        <section class="panel">
+          <div class="section-head">
+            <h2>Task List</h2>
+            <p>Search, filter, edit, and complete your tasks.</p>
+          </div>
+
+          <div class="filters">
+            <input type="text" id="searchInput" placeholder="Search tasks..." />
+            <select id="filterStatus">
+              <option value="">All Status</option>
+              <option value="Pending">Pending</option>
+              <option value="In Progress">In Progress</option>
+              <option value="Completed">Completed</option>
+            </select>
+            <select id="filterPriority">
+              <option value="">All Priorities</option>
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </div>
+
+          <div id="messageBox" class="message-box hidden"></div>
+          <div id="taskList" class="task-list"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+  </html>
